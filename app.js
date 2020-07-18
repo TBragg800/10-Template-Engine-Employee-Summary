@@ -33,3 +33,67 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+
+const employeesArray = [];
+
+// array of questions for user
+const questions = [
+    {
+        type: "input",
+        message: "What is the employee's name?",
+        name: "name"
+      },
+      {
+        type: "input",
+        message: "What is the the employee's id?",
+        name: "id"
+      },
+      {
+        type: "input",
+        message: "What is the employee's email address?",
+        name: "email"
+      },
+      {
+        type: "list",
+        message: "What is the employee's role?",
+        name: "role",
+        choices: [
+        "Intern", 
+        "Engineer",
+        "Manager"
+        ]
+      },
+      {
+          type: "input",
+          message: "What school does this Intern attend?",
+          name: "school",
+          when: answers => {
+              return (answers.role === "Intern");
+          }
+      },
+      {
+        type: "input",
+        message: "What is this Engineer's Github username?",
+        name: "github",
+        when: answers => {
+            return (answers.role === "Engineer");
+        }
+    },
+    {
+        type: "input",
+        message: "What is this Manager's office number?",
+        name: "officeNumber",
+        when: answers => {
+            return (answers.role === "Manager");
+        }
+    }
+];
+
+const newEmpQues = [
+    {
+        type: "confirm",
+        message: "Do you want to add another Employee?",
+        name: "new"
+      }
+];
+
