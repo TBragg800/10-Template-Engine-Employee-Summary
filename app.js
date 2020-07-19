@@ -97,3 +97,57 @@ const newEmpQues = [
       }
 ];
 
+// function to write README file
+// function writeToFile(fileName, data) {
+//     fs.writeFile(fileName, data, (err) => {
+
+//         if (err) {
+//           return console.log(err);
+//         }
+
+//         console.log("Success!");
+      
+//       });
+// }
+
+// function to initialize program
+function init() {
+    inquirer.prompt(questions).then(answers => {
+        let name = answers.name;
+        let id = answers.id;
+        let email = answers.email;
+        let role = answers.role;
+        if (role === "Intern") {
+            var newIntern = new Intern(name, id, email, answers.school);
+            employeesArray.push(newIntern);
+        } else 
+        if (role === "Engineer") {
+            var newEngineer = new Engineer(name, id, email, answers.github);
+            employeesArray.push(newEngineer);
+        } else 
+        if (role === "Manager") {
+            var newManager = new Manager(name, id, email, answers.officeNumber);
+            employeesArray.push(newManager);
+        }
+        init2();
+    });
+};
+
+function init2() {
+    inquirer.prompt(newEmpQues).then(newAnswers => {
+        if (newAnswers.new) {
+            init();
+        } else {
+           console.log(employeesArray);
+        fs.writeFile(outputPath, render(employeesArray), function(err) {
+        if (err) {
+          return console.log(err);
+        }
+        console.log("Your input has been successfully rendered to team.html!");
+      })
+        }
+    });
+}
+
+// function call to initialize program
+init();
