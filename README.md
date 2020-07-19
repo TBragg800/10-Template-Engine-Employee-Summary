@@ -1,15 +1,15 @@
 # 10-Template-Engine-Employee-Summary
 
 ##  Repository: 
-[go](https://github.com/TBragg800/10-Template-Engine-Employee-Summary){:target="_blank"}
+[10-Template-Engine-Employee-Summary](https://github.com/TBragg800/10-Template-Engine-Employee-Summary)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)
 ![GitHub repo size](https://img.shields.io/github/repo-size/TBragg800/10-Template-Engine-Employee-Summary?style=plastic)
 
 ## Walkthrough Video Demonstration: 
 ![Walkthrough](./assets/10-temp-eng-emp.gif)
-YouTube link to the walkthrough:
-[go](https://www.youtube.com/watch?v=yOWRzRj2rBA&feature=youtu.be){:target="_blank"}
+* YouTube link to the 
+[walkthrough](https://www.youtube.com/watch?v=yOWRzRj2rBA&feature=youtu.be){:target="_blank"}
 
 ## Table of Contents
   [Description](#Description)
@@ -35,6 +35,7 @@ YouTube link to the walkthrough:
 
 ## Usage
   After installation, the user should run 'node app.js' in the CLI, then answer the following prompts.
+
 ![](./assets/10-temp-eng-CLI-usage.png)
 
 ## License
@@ -65,12 +66,13 @@ SOFTWARE.
 
 ## Tests
   There are are 4 test suites with a total of 17 tests by way of the jest npm. After following the installation instructions, type "npm run test" into your CLI.
+
 ![](./assets/10-temp-eng-tests.png)
 
 ## Questions
   All questions should be submitted to the email listed below. Please consult the GitHub profile or Repo for additional concerns. 
   Email: Ttbbragg83@gmail.com
-  Github: [TBragg800] (http://github.com/TBragg800)
+  Github: ![TBragg800](http://github.com/TBragg800)
 
 ## Screenshot of deployed application
 ![](./assets/10-temp-eng-depolyed.png)
