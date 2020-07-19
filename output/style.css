@@ -1,0 +1,31 @@
+body {
+    background-color: #f6d8ac;
+}
+
+.myJT {
+    color: #000 !important;
+    background-color: rgba(114, 25, 25, 0.94);
+    padding: 30px 20px;
+}
+
+.card {
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 0px;
+    box-shadow: 5px 10px 18px #3a5757;
+
+}
+
+.myHeader {
+    color: #000 !important;
+    background:#2a6592;
+    text-align: center;
+    
+}
+
+.card-body {
+    color: #000 !important;
+    background: #64B5F6;
+    font-weight: bold;
+}
