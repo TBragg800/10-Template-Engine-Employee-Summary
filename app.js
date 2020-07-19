@@ -138,7 +138,6 @@ function init2() {
         if (newAnswers.new) {
             init();
         } else {
-           console.log(employeesArray);
         fs.writeFile(outputPath, render(employeesArray), function(err) {
         if (err) {
           return console.log(err);
